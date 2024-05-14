@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/card_title_bar_profile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_avatar">
+
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/brand_text_profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="25sp"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:maxLines="1"
+                                android:text="SONY XPERIA XZ3"
+                                android:textColor="@color/colorPrimaryDark">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="DETECT_THRESHOLD">
+
+                    </TextView>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:id="@+id/detect_text"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="0.0">
+
+                    </TextView>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="IOU_THRESHOLD">
+
+                    </TextView>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:id="@+id/iou_text"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="0.0">
+
+                    </TextView>
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="IOU_CLASS_DUPLICATED_THRESHOLD">
+
+                    </TextView>
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:id="@+id/class_text"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="0.0">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/settings_Btn"
+            android:background="@drawable/bg_btn_primary"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:text="Change Model Parameters"
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

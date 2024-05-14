@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conslayout"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/card_title_bar_summary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Detected Object">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/summaryView"
+                        android:layout_width="300dp"
+                        android:layout_height="500dp"
+                        android:background="@drawable/bg_placeholder">
+
+                    </ImageView>
+
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/toggle_Btn"
+                        android:background="@drawable/bg_btn_primary"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:text="See Base Image"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Other detections on same base image">
+
+                    </TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/detections_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Base image information">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/cameraLayout"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/ic_camera">
+
+                        </ImageView>
+
+                        <TextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Image source : Camera">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/locLayout"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/ic_location">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/loc_text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:text="Location Data : ">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/timeLayout"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/ic_clock">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/time_text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Timestamp : ">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/storageLayout"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/ic_storage">
+
+                        </ImageView>
+
+                        <TextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Image source : Storage">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <org.osmdroid.views.MapView
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/map_view"
+                        android:layout_width="325dp"
+                        android:layout_height="276dp"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/internet_text"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="15dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/quicksand_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="An active Internet connection is needed to retrieve map data.">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conslayout"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredictActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/card_title_bar_predict" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/imageView"
+                        android:layout_width="300dp"
+                        android:layout_height="500dp"
+                        android:background="@drawable/bg_placeholder">
+
+                    </ImageView>
+
+                    <androidx.camera.view.PreviewView
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:id="@+id/previewView"
+                        android:layout_width="300dp"
+                        android:layout_height="500dp"
+                        android:background="@drawable/bg_image_png">
+
+                    </androidx.camera.view.PreviewView>
+
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/txt_captureoptions">
+
+                    </ImageView>
+
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/captureBtn"
+                        android:background="@drawable/bg_btn_primary"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:text="Open Camera"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/galleryBtn"
+                        android:onClick="selectImage"
+                        android:background="@drawable/bg_btn_secondary"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:text="Select from Gallery"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
