@@ -33,6 +33,10 @@ The app has a built in SQLite DB that stores data within the device. There is no
 6. For images captured through Camera, Location data is saved and can be retrieved through the app itself.
 7. Uses sharedpreferences to save model parameters.
 8. SQLite DB is used to track info about detections.
+9. The UI updates with every DB update
+10. Activity Lifecycle management
+11. Modern UI + App icons
+12. Permission Manager for getting permissions
 
 ### References
 The pretrained model from this repo is used in this project. <a href="https://github.com/Pawandeep-prog/yolo_android" target="_blank">Click here to visit there</a>
