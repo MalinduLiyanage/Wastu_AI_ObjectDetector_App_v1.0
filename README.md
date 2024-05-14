@@ -1,5 +1,5 @@
 # Wastu App v1.0 
-<img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/c3b36637-d3a5-4606-bee0-3588fcc228e1" alt="logo">
+<img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/3cbafc90-112d-495c-8fb4-471304b35456" alt="logo">
 
 # A simple Java based Android app with TensorflowLite, SQLite, OpenStreetMap and SharedPreferences
 *By Malindu Liyanage
@@ -35,7 +35,7 @@ The app has a built in SQLite DB that stores data within the device. There is no
 8. SQLite DB is used to track info about detections.
 
 ### References
-The pretrained model from this repo is used in this project. <a href="[https://www.example.com](https://github.com/Pawandeep-prog/yolo_android)" target="_blank">Click here to visit there</a>
+The pretrained model from this repo is used in this project. <a href="https://github.com/Pawandeep-prog/yolo_android" target="_blank">Click here to visit there</a>
 
 ### Last update
 2024.05.14
