@@ -14,7 +14,7 @@
 <img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/fa5aaa3b-0187-49cc-b3e8-dc834e2d1243" alt="Image 6" width="250" height="480">
 <img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/b7ca591d-3bb7-4d59-8659-f7207d7cd973" alt="Image 7" width="250" height="480">
 <img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/82d5481d-8095-470a-9d88-372c38737047" alt="Image 8" width="250" height="480">
-<img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/e99af4be-2719-47de-8375-f3989bab80af" alt="Image 9" width="250" height="600">
+<img src="https://github.com/user-attachments/assets/203f60e2-ceeb-46c0-a179-8288a81315da" alt="Image 9" width="250" height="600">
 <img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/82bb86f5-e92c-4808-aac6-ce6259803b8b" alt="Image 10" width="250" height="520">
 <img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/ec6a6d31-221a-4e8e-b190-fb0f5140f261" alt="Image 11" width="250" height="480">
 <img src="https://github.com/MalinduLiyanage/Wastu_AI_ObjectDetector_App_v1.0/assets/136006504/678e6607-5383-4524-8021-76eed9e6067d" alt="Image 12" width="250" height="480">
